@@ -1,0 +1,277 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KALASH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="{% static 'android-chrome-192x192.png' %}">
+    <style>
+        .one {
+            position: absolute1;
+            height: 700px;
+            width: 33.33%;
+        }
+
+        .two {
+            position: absolute;
+            height: 500px0;
+            width: 500px;
+            margin-left: 5px;
+        }
+
+        .three {
+            position: absolute;
+            height: 500px0;
+            width: 500px;
+            margin-left: 520px;
+        }
+
+        .four {
+            position: relative;
+            height: 310px;
+            width: 510px;
+            margin-top: 395px;
+            margin-left: 5px
+        }
+
+        .five {
+            position: absolute;
+            height: 310px;
+            width: 510px;
+            margin-left: 5px;
+            margin-top: 390px;
+        }
+
+        .six {
+            position: absolute;
+            height: 310px;
+            width: 510px;
+            margin-left: 5px;
+            margin-top: 710px;
+        }
+
+        .seven {
+            height: 310px;
+            width: 500px;
+            /* margin-left: 520px; */
+            margin-top: 5px;
+        }
+
+        .eight {
+            /* position: absolute; */
+            height: 310px;
+            width: 510px;
+            margin-left: 5px;
+        }
+
+        #one {
+            font-size: xx-large;
+            margin-left: 600px;
+            font-family: cursive;
+            font-style: italic;
+
+        }
+
+        /* .nav-item:hover{
+    background-color: rgb(92, 18, 121);
+} */
+        .opinion {
+            background-color: #14c4acd8;
+        }
+
+        .navbar-brand {
+            margin-left: 10px;
+        }
+
+        .logo {
+            border-radius: 50px;
+        }
+
+        body {
+            background-color: rgb(254, 254, 255);
+        }
+
+        a:hover {
+            background-color: rgb(10, 108, 97);
+        }
+
+        nav {
+            background-color: #14c4acd8;
+        }
+
+        #navbarSupportedContent {
+            margin-left: 270px;
+        }
+
+        .nav-item {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success.bg-gradient text-white" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="{% static 'logo.jpg' %}" alt="" height="100px" width="100px" class="logo">
+            <a class="navbar-brand" href="#">KALASH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Windows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">DOORS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="interior">INTERIOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #3f51b5">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Links -->
+                <section class="mt-5">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">About us</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">Products</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">Awards</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">Help</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">Contact</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="my-5" />
+
+                <!-- Section: Text -->
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                Glass, a fragile embrace between interior and exterior, where the world paints its
+                                stories upon the canvas of windows Windows frame the world like living artworks, each
+                                pane of glass a brushstroke in the masterpiece of architecture Glass is the whisper that
+                                bridges solitude and connection, as windows invite both solitude's introspection and the
+                                world's vibrant presence.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Social -->
+                <section class="text-center mb-5">
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+                <!-- Section: Social -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
